@@ -1,0 +1,11 @@
+# custom app config
+# overrides DCAPE/apps/drone/dcape-app/docker-compose.yml
+
+version: '2'
+
+services:
+  app:
+    environment:
+      - DATABASE_TYPE=postgresql
+      - DATABASE_URL=postgres://${PGUSER}:${PGPASSWORD}@db/${PGDATABASE}?sslmode=disable
+      - APP_SECRET=${APP_SECRET}
