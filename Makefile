@@ -4,7 +4,7 @@
 IMAGE     ?= ghcr.io/umami-software/umami
 
 # Docker image version
-IMAGE_VER ?= postgresql-v2.0.1
+IMAGE_VER ?= postgresql-v2.1.0
 
 # Hostname for external access
 APP_SITE  ?= umami.dev.lan
